@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*
+- Soft red: hsl(7, 99%, 70%)
+- Yellow: hsl(51, 100%, 49%)
+- Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
+- Dark blue (photography text): hsl(198, 62%, 26%)
+- Dark moderate cyan (footer): hsl(168, 34%, 41%)
+
+### Neutral
+
+- Very dark desaturated blue: hsl(212, 27%, 19%)
+- Very dark grayish blue: hsl(213, 9%, 39%)
+- Dark grayish blue: hsl(232, 10%, 55%)
+- Grayish blue: hsl(210, 4%, 67%)
+- White: hsl(0, 0%, 100%)*/
+:root {
+  --primary-soft-red: hsl(7, 99%, 70%);
+  --primary-yellow: hsl(51, 100%, 49%);
+  --primary-cyan: hsl(167, 40%, 24%);
+  --primary-blue: hsl(198, 62%, 26%);
+  --primary-cyan-moderate: hsl(168, 34%, 41%);
+  --neutral-dark-blue: hsl(212, 27%, 19%);
+  --white: hsl(0, 0%, 100%);
+  --neutral-dark-gray: hsl(232, 10%, 55%);
+}
+
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+button:focus {
+  outline: none;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+
+.fraunce-700 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.fraunce-900 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+.mb-small {
+  margin-bottom: 2rem;
+}
+
+.features .feature {
+  display: flex;
+  height: 50vw;
+  max-height: 52rem;
+}
+.features .feature:nth-child(even) .feature__image {
+  order: -1;
+}
+.features .feature > * {
+  flex-basis: 50%;
+}
+.features .feature__data {
+  display: grid;
+  place-items: center;
+}
+.features .feature__data .box {
+  width: 30rem;
+}
+.features .feature__data .box h3 {
+  font-size: 3rem;
+  color: var(--neutral-dark-blue);
+}
+.features .feature__data .box p {
+  font-size: 1.8rem;
+  color: var(--neutral-dark-gray);
+}
+.features .feature__data .box a {
+  position: relative;
+}
+.features .feature__data .box a::before {
+  content: "";
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  bottom: -1px;
+  height: 1rem;
+  opacity: 0.3;
+  transition: 0.3s opacity;
+  z-index: -1;
+}
+.features .feature__data .box a:hover::before {
+  opacity: 1;
+}
+.features .feature__data .box a.red::before {
+  background: var(--primary-soft-red);
+}
+.features .feature__data .box a.yellow::before {
+  background: var(--primary-yellow);
+}
+.features .feature__image img {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

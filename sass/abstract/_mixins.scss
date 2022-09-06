@@ -1,0 +1,9 @@
+$screen-sizes : (
+    "tab": 900px,
+    "mobile": 600px,
+    "mini": 480px
+);
+
+@mixin respond($size){
+    @media (max-width : map-get($screen-sizes, $size)){@content}
+}

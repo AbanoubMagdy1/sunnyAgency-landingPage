@@ -30,9 +30,25 @@
           <a href="#" class="fraunce-700 yellow">Learn more</a>
         </div>
       </div>
-
+<!--srcset=" 
+      small.jpg 240w, 
+      medium.jpg 300w, 
+      large.jpg 720w
+   " 
+   sizes=" 
+      (min-width: 960px) 720px, 
+      100vw 
+   "-->
       <div class="feature__image">
-        <img src="./images/desktop/image-transform.jpg" alt="">
+        <img 
+          src="./images/desktop/image-transform.jpg" 
+          alt=""
+          srcset="
+          ./images/desktop/image-transform.jpg 700w,
+          ./images/mobile/image-transform.jpg 100w,
+          "
+          sizes="(min-width: 600px) 50vw, 10vw "
+        >
       </div>
     </div>
     <div class="feature">
@@ -47,13 +63,29 @@
       </div>
 
       <div class="feature__image">
-        <img src="./images/desktop/image-stand-out.jpg" alt="">
+        <img 
+          src="./images/desktop/image-stand-out.jpg" 
+          alt=""
+          srcset="
+          ./images/desktop/image-stand-out.jpg 700w,
+          ./images/mobile/image-stand-out.jpg 100w,
+          "
+          sizes="(min-width: 600px) 50vw, 10vw "
+        >
       </div>
     </div>
 
     <div class="feature">
       <div class="feature__image">
-        <img src="./images/desktop/image-graphic-design.jpg" alt="">
+        <img 
+          src="./images/desktop/image-graphic-design.jpg" 
+          alt=""
+          srcset="
+          ./images/desktop/image-graphic-design.jpg 700w,
+          ./images/mobile/image-graphic-design.jpg 100w,
+          "
+          sizes="(min-width: 600px) 50vw, 10vw "
+        >
         <div class="feature__image--box cyan">
           <h3 class="fraunce-900 mb-small">Graphic design</h3>
           <p>
@@ -63,7 +95,15 @@
       </div>
 
       <div class="feature__image">
-        <img src="./images/desktop/image-photography.jpg" alt="">
+        <img 
+          src="./images/desktop/image-photography.jpg" 
+          alt=""
+          srcset="
+          ./images/desktop/image-photography.jpg 700w,
+          ./images/mobile/image-photography.jpg 100w,
+          "
+          sizes="(min-width: 600px) 50vw, 10vw "
+        >
         <div class="feature__image--box blue">
           <h3 class="fraunce-900 mb-small">Photography</h3>
           <p>

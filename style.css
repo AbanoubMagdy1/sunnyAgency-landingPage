@@ -86,18 +86,52 @@ body {
   margin-top: 18rem;
   font-size: 6rem;
 }
+@media (max-width: 600px) {
+  .primary-text {
+    margin-top: 12rem;
+    font-size: 4.8rem;
+  }
+}
 
 .mb-small {
   margin-bottom: 2rem;
 }
 
+.mb-medium {
+  margin-bottom: 3.5rem;
+}
+
+.mb-large {
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 600px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  display: none;
+}
+@media (max-width: 600px) {
+  .hide-for-desktop {
+    display: block;
+  }
+}
+
 header {
   overflow: hidden;
-  height: 100vh;
-  background: url("./images/desktop/image-header.jpg");
+  height: 60rem;
+  background-image: url("./images/desktop/image-header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: bottom center;
+}
+@media (max-width: 600px) {
+  header {
+    background-image: url("./images/mobile/image-header.jpg");
+  }
 }
 
 .features .feature {

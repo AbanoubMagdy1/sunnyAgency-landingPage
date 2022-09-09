@@ -21,4 +21,9 @@ body{
     text-align: center;
     margin-top: 18rem;
     font-size: 6rem;
+
+    @include respond(mobile){
+        margin-top: 12rem;
+        font-size: 4.8rem;
+    }
 }

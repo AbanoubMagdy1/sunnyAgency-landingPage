@@ -1,8 +1,12 @@
 header{
     overflow: hidden;
-    height: 100vh;
-    background: url("./images/desktop/image-header.jpg");
+    height: 60rem;
+    background-image: url("./images/desktop/image-header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom center;
+
+    @include respond(mobile){
+        background-image: url("./images/mobile/image-header.jpg");
+    }
 }

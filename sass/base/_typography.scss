@@ -23,7 +23,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 5px;
     max-width: 90%;
-    margin: 12rem auto 0;
+    margin: 9rem auto 0;
 
     @include respond(mobile){
         font-size: 4.8rem;

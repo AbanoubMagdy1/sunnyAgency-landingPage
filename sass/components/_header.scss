@@ -9,4 +9,99 @@ header{
     @include respond(mobile){
         background-image: url("./images/mobile/image-header.jpg");
     }
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+
+        &__list{
+            display: flex;
+            gap: .3rem;
+            color: var(--white);
+
+            li{
+                cursor: pointer;
+                transition: .3s background-color;
+                border-radius: 2rem;
+                padding: 1rem 1.4rem;
+
+                &.active{
+                    background-color: var(--white);
+                    color: var(--neutral-dark-blue);
+                    font-family: 'Fraunces', serif;
+                }
+
+                &:hover:not(.active){
+                    background-color: var(--primary-blue);
+                }
+            }
+        }
+
+        &__menu{
+            position: fixed;
+            top: -50rem;
+            width: 40rem;
+            max-width: 90%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            background-color: var(--white);
+            text-align: center;
+            padding: 3rem;
+            font-size: 3rem;
+            transition: .6s transform cubic-bezier(.39,1.62,.59,1);
+            z-index: 100;
+
+
+            &.open{
+                transform: translate(-50%, 57rem);
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                transform: translateY(-90%);
+                border: 2rem solid transparent;
+                border-bottom-color: white;
+                border-right-color: white;
+            }
+
+
+            li{
+                transition: .3s background-color;
+                padding: 1rem 1.4rem;
+                border-radius: 2rem;
+                width:fit-content;
+                margin-inline: auto;
+                &.active{
+                    background-color: var(--primary-yellow);
+                    color: var(--neutral-dark-blue);
+                    font-family: 'Fraunces', serif;
+                }
+
+                &:hover:not(.active){
+                    background-color: var(--primary-soft-red);
+                }                
+                &:not(:last-child){
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        .overlay{
+            position: fixed;
+            inset: 0;
+            visibility: hidden;
+            transition: .6s filter;
+            backdrop-filter: blur(0);
+
+            &.open{
+                visibility: visible;
+                backdrop-filter: blur(3px);
+            }
+        }
+    }
 }

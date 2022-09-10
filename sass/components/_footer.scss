@@ -1,0 +1,31 @@
+.footer{
+    background-color: var(--primary-cyan-moderate);
+    padding: 5rem 2rem;
+    text-align: center;
+
+    .title{
+        color: var(--primary-cyan);
+        font-size: 4rem;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        font-size: 1.9rem;
+        color: var(--primary-cyan);
+        li{
+            transition: .3s color;
+
+            svg path{ transition: .3s fill;}
+
+            &:hover{
+                color: var(--white);
+
+                svg path{
+                    fill: var(--white);
+                }
+            }
+        }
+    }
+}

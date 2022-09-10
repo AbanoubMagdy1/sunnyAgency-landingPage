@@ -19,11 +19,15 @@ body{
 .primary-text{
     color: var(--white);
     text-align: center;
-    margin-top: 18rem;
     font-size: 6rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    max-width: 90%;
+    margin: 12rem auto 0;
 
     @include respond(mobile){
-        margin-top: 12rem;
         font-size: 4.8rem;
     }
+
+    @include respond(mini){font-size: 3.8rem;}
 }

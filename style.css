@@ -83,13 +83,20 @@ body {
 .primary-text {
   color: var(--white);
   text-align: center;
-  margin-top: 18rem;
   font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  max-width: 90%;
+  margin: 12rem auto 0;
 }
 @media (max-width: 600px) {
   .primary-text {
-    margin-top: 12rem;
     font-size: 4.8rem;
+  }
+}
+@media (max-width: 480px) {
+  .primary-text {
+    font-size: 3.8rem;
   }
 }
 

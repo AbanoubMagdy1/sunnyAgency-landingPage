@@ -97,6 +97,7 @@ header{
             visibility: hidden;
             transition: .6s filter;
             backdrop-filter: blur(0);
+            z-index: 10;
 
             &.open{
                 visibility: visible;

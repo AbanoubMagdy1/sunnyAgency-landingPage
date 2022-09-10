@@ -1,0 +1,37 @@
+.testimonials{
+    margin: 7rem auto;
+
+    .title{
+        text-align: center;
+        color : var(--neutral-grayish-blue);
+        font-size: 3rem;
+        letter-spacing: 2px;
+    }
+
+    .testimonials-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10rem;
+        margin-top: 6rem;
+
+        .testimonial{
+            flex: 0 0 30rem;
+            text-align: center;
+
+            &__image{
+                width: 8rem;
+                border-radius: 50%;
+            }
+            &__text{
+                font-size: 1.6rem;
+            }
+            &__name{
+                margin-bottom: 1rem;
+            }
+            &__job{
+                color : var(--neutral-grayish-blue);
+            }
+        }
+    }
+}

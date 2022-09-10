@@ -28,6 +28,7 @@
   --neutral-dark-blue: hsl(212, 27%, 19%);
   --white: hsl(0, 0%, 100%);
   --neutral-dark-gray: hsl(232, 10%, 55%);
+  --neutral-grayish-blue: hsl(210, 4%, 67%);
 }
 
 html {
@@ -125,6 +126,11 @@ body {
   .hide-for-desktop {
     display: block;
   }
+}
+
+.container {
+  margin: 4rem auto;
+  max-width: 90%;
 }
 
 header {
@@ -229,6 +235,40 @@ header {
 }
 .features .feature__image--box.blue {
   color: var(--primary-blue);
+}
+
+.testimonials {
+  margin: 7rem auto;
+}
+.testimonials .title {
+  text-align: center;
+  color: var(--neutral-grayish-blue);
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+.testimonials .testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 6rem;
+}
+.testimonials .testimonials-container .testimonial {
+  flex: 0 0 30rem;
+  text-align: center;
+}
+.testimonials .testimonials-container .testimonial__image {
+  width: 8rem;
+  border-radius: 50%;
+}
+.testimonials .testimonials-container .testimonial__text {
+  font-size: 1.6rem;
+}
+.testimonials .testimonials-container .testimonial__name {
+  margin-bottom: 1rem;
+}
+.testimonials .testimonials-container .testimonial__job {
+  color: var(--neutral-grayish-blue);
 }
 
 /*# sourceMappingURL=style.css.map */

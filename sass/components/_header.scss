@@ -95,7 +95,7 @@ header{
             position: fixed;
             inset: 0;
             visibility: hidden;
-            transition: .6s filter;
+            transition: .6s backdrop-filter;
             backdrop-filter: blur(0);
             z-index: 10;
 
